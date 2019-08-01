@@ -1,0 +1,21 @@
+{
+  "name": "khan-api-wrapper",
+  "version": "1.0.0",
+  "description": "A simple wrapper around the Khan Academy API for use in node",
+  "main": "index.js",
+  "repository": "git@github.com:jb-1980/khan-api-wrapper.git",
+  "author": "Joseph Gilgen <gilgenlabs@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "oauth-1.0a": "^2.2.6"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "jest": "^24.8.0"
+  }
+}
