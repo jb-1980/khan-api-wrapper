@@ -341,13 +341,12 @@ const KhanAPIWrapper = class {
   }
 
   async userExercisesProgressChanges(
-    exercise,
-    identifier = {},
     dt_start = null,
-    dt_end = null
+    dt_end = null,
+    identifier = {}
   ) {
     ;`Retrieve a list of ProblemLog entities for one exercise for one user.`
-    const endpoint = `/api/v1/user/exercises/${exercise}/progress_changes`
+    const endpoint = `/api/v1/user/exercises/progress_changes`
     return await this.fetchResource(endpoint, true, "GET", {
       ...identifier,
       dt_start,
@@ -355,7 +354,7 @@ const KhanAPIWrapper = class {
     })
   }
 
-  async userVideos(identifier = {}, dt_start = null, dt_end = null) {
+  async userVideos(dt_start = null, dt_end = null, identifier = {}) {
     ;`Retrieve a list of information about a single video a user has watched:
     the amount of time watched, points received, etc.`
     const endpoint = `/api/v1/user/videos`
@@ -375,9 +374,9 @@ const KhanAPIWrapper = class {
 
   async userVideosYoutubeidLog(
     youtubeid,
-    identifier = {},
     dt_start = null,
-    dt_end = null
+    dt_end = null,
+    identifier = {}
   ) {
     const endpoint = `/api/v1/user/videos/${youtubeid}/log`
     return await this.fetchResource(endpoint, true, "GET", {
