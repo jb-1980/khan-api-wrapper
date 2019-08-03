@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-- "11"
+- '11'
+deploy:
+  provider: npm
+  email: gilgenlabs@gmail.com
+  api_key:
+    secure: J9VBerSvq2U8pQ4CfvEF7DOwhBdMg2igxXhOyVe5FJDh2YqvbLGBUb3ifuCCjJClE2+Zr7CKSmSkphmBHezhF1VhShLI8egWQZD967NpYK6lebck8JL6Oyf+ocAxH6fdVkPg27Cg/xr8OPIrDp95HtyO7PcozGCrqYlDd+GSlKEzDAfuJEQUXPlCHHH0iPhOqYKFmD8/OG5flAv+Td0YoP6Hv0UyFaKz6tq6Vn7c++akrh+uoIGklN2g4GUbc3ZxPs90blYhklKv4GvYHSlBFyR6gTb3sE2VegQSL9lMWuLav90mXRNN8Kcm439DJf5acSjyMiqfHC7BS/Z2mqtqvoT9Q2UJPmCdPs4JuuSN72HMkTE0Zjgmakug3C3qpPI8AgypsN18cQlQd6BKTnLMdbOfg6FppwBbD4UUX7VNpsxKKWs1lfpIv7oOM5Ar3a1l1skZ4kD21dBgi87fzO15mDhH1HQt28BJ1qcaOXkvgZ5wSyOfIXn6CysgLAMYScu79OxQDcRWnOnWDyYpGPF5c5u57EhzzJ/mWCTDLYYtzTXT0Vm0tG5iVEP9J+LXJearRnun3eUb+JE1xlN/o+69F5LC2yVxC+RI3+qdWv+Gfmp9PEPjVuJZ/8MbtJMNo5QVHYLYcM1KF6Cvk1VjzsEnCXrxFmC8KvzqfH8rTnM7gVs=
+  on:
+    tags: true
+    repo: jb-1980/khan-api-wrapper
