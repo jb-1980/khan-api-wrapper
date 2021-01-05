@@ -13,7 +13,7 @@
     "test-one": "jest ./examples/_tests_/api-graphql.test.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "oauth-1.0a": "^2.2.6"
   },
   "devDependencies": {
